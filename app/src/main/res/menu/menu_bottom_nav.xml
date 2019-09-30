@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Home"
+        android:enabled="true"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/report"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="apa ya"/>
+
+    <item
+        android:id="@+id/notif"
+        android:enabled="true"
+        android:title="notif"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/user"
+        android:enabled="true"
+        android:title="Akun"
+        app:showAsAction="ifRoom"
+    />
+
+</menu>
