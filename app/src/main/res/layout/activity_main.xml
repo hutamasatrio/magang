@@ -9,6 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:id="@+id/appbar"
+        android:background="@color/sacoret1"
         android:layout_height="50dp">
         <TextView android:layout_width="wrap_content"
             android:layout_gravity="end"
@@ -18,6 +19,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/VPHome"
+        android:background="@color/colorBackground"
         android:layout_below="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_marginBottom="50dp"
@@ -25,19 +27,43 @@
 
     </androidx.viewpager.widget.ViewPager>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/ic_add_white_24dp"
-        android:layout_marginBottom="30dp"
-        android:layout_height="wrap_content" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:menu_fab_size="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:fab_size="mini"
+            android:layout_height="wrap_content" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:fab_size="mini"
+            android:layout_height="wrap_content" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:fab_size="mini"
+            android:layout_height="wrap_content" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:fab_size="mini"
+            android:layout_height="wrap_content" />
+    </com.github.clans.fab.FloatingActionMenu>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmNavView"
         android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/menu_bottom_nav"
-        android:layout_height="50dp" android:layout_marginBottom="-1dp">
+        android:layout_marginBottom="0dp"
+        app:itemTextColor="@color/cardview_dark_background"
+        app:menu="@menu/menu_bottom_nav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -30,4 +32,8 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    implementation 'com.github.clans:fab:1.6.4'
+
+
 }

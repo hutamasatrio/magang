@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         viewPager.setCurrentItem(2);
                         break;
                     case R.id.user:
-                        viewPager.setCurrentItem(2);
+                        viewPager.setCurrentItem(3);
                         break;
                 }
                 return false;
