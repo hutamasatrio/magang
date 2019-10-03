@@ -1,8 +1,6 @@
-package com.example.projecttimeline;
+package com.example.projecttimeline.fragment;
 
 
-import android.app.Application;
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.projecttimeline.R;
+import com.example.projecttimeline.adapter.RVAdapterHome;
+import com.example.projecttimeline.model.HomeDasboard;
 
 import java.util.ArrayList;
 import java.util.List;

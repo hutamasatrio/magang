@@ -1,4 +1,4 @@
-package com.example.projecttimeline;
+package com.example.projecttimeline.model;
 
 public class HomeDasboard {
     public HomeDasboard(String nama, String ci, String co, String jmlProject, String progress, String divisi) {

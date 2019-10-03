@@ -2,15 +2,17 @@ package com.example.projecttimeline;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.net.VpnService;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 
+import com.example.projecttimeline.adapter.VPAdapter;
+import com.example.projecttimeline.fragment.HomeFragment;
+import com.example.projecttimeline.fragment.NotificationFragment;
+import com.example.projecttimeline.fragment.ReportFragment;
+import com.example.projecttimeline.fragment.UserFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
