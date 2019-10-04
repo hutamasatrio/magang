@@ -9,7 +9,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:gravity="center"
         android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
@@ -18,126 +17,199 @@
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
             android:layout_width="match_parent"
-            android:layout_height="500dp">
+            android:layout_height="match_parent">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:gravity="center"
-                android:layout_height="match_parent">
-
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical"
-                    android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:text="Nama"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:text="Satrio Budhi Hutama"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <View
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:background="#000000"
-                        android:layout_height="1dp"/>
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
 
-                </LinearLayout>
-                <LinearLayout
+                        <TextView
+                            android:text="Nama"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="7pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="Satrio Budhi Hutama"
+                            android:layout_width="wrap_content"
+                            android:textSize="7pt"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Email"
+                            android:textStyle="bold"
+                            android:textSize="7pt"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="hutamasatrio@gmail.com"
+                            android:textSize="7pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Divisi"
+                            android:textSize="7pt"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="hutamasatrio@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:textSize="7pt"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Alamat"
+                            android:textStyle="bold"
+                            android:textSize="7pt"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="7pt"
+                            android:text="hutamasatrio@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="vertical"
                     android:layout_margin="10dp"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:text="Email"
+                        android:text="No Telepon"
+                        android:textStyle="bold"
+                        android:textSize="7pt"
+                        android:layout_marginBottom="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:text="hutamasatrio@gmail.com"
-                        android:layout_width="wrap_content"
+                        android:layout_width="wrap_content"                            android:textSize="7pt"
                         android:layout_height="wrap_content" />
                     <View
                         android:layout_width="match_parent"
                         android:background="#000000"
                         android:layout_height="1dp"/>
+
+
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="Email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:text="hutamasatrio@gmail.com"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <View
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:background="#000000"
-                        android:layout_height="1dp"/>
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Password"
+                            android:textStyle="bold"
+                            android:textSize="7pt"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="hutamasatrio@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:textSize="7pt"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Males Mikir"
+                            android:textStyle="bold"
+                            android:textSize="7pt"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="hutamasatrio@gmail.com"
+                            android:layout_width="wrap_content"
+                            android:textSize="7pt"
+
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="#000000"
+                            android:layout_height="1dp"/>
+
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="Email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:text="hutamasatrio@gmail.com"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:background="#000000"
-                        android:layout_height="1dp"/>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="Email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:text="hutamasatrio@gmail.com"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <View
-                        android:layout_width="match_parent"
-                        android:background="#000000"
-                        android:layout_height="1dp"/>
-
-
-
-            </LinearLayout>
-
-
-
-            </LinearLayout>
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_alignParentBottom="true"
+                   android:layout_above="@+id/logoutBtn"
+                    android:id="@+id/editBtn"
                     android:layout_gravity="bottom"
                     android:layout_height="50dp">
 
@@ -152,6 +224,29 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Edit" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/logoutBtn"
+                    android:layout_gravity="bottom"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#88D8C7"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="#FF0000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout" />
 
                     </LinearLayout>
 

@@ -6,5 +6,8 @@
     <color name="colorBackground">#FAF4F4</color>
     <color name="sacoret1">#D31B31</color>
     <color name="sacoret2">#D31B31</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000000</color>
+
 
 </resources>

@@ -77,10 +77,10 @@ public class RVAdapterReport extends RecyclerView.Adapter<RVAdapterReport.MyView
             super(itemView);
 
             nama = itemView.findViewById(R.id.tvNamaReport);
-            divisi = itemView.findViewById(R.id.tvdivisireport);
+            divisi = itemView.findViewById(R.id.tvDivisiReport);
             jmlProjek = itemView.findViewById(R.id.tvJmlProjectReport);
-            performance = itemView.findViewById(R.id.tvrformance);
-            bulan = itemView.findViewById(R.id.tvBulanReport);
+            performance = itemView.findViewById(R.id.tvPerformanceReport);
+            bulan = itemView.findViewById(R.id.tvMonthReport);
 
         }
     }
