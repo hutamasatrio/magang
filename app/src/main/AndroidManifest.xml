@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".activity.ListProjectActivity"></activity>
+        <activity android:name=".activity.ListClientActivity" />
+        <activity android:name=".activity.NewClientActivity" />
+        <activity android:name=".activity.NewProjectActivity" />
+        <activity android:name=".activity.InputDataActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

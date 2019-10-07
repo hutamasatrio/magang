@@ -44,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabNewProject"
             android:layout_width="wrap_content"
             app:fab_size="mini"
             android:layout_height="wrap_content" />
@@ -51,16 +52,19 @@
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             app:fab_size="mini"
+            android:id="@+id/fabListProject"
             android:layout_height="wrap_content" />
 
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             app:fab_size="mini"
+            android:id="@+id/fabNewClient"
             android:layout_height="wrap_content" />
 
         <com.github.clans.fab.FloatingActionButton
             android:layout_width="wrap_content"
             app:fab_size="mini"
+            android:id="@+id/fabListClient"
             android:layout_height="wrap_content" />
     </com.github.clans.fab.FloatingActionMenu>
 
@@ -71,7 +75,7 @@
         app:labelVisibilityMode="unlabeled"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
-        
+
         app:menu="@menu/menu_bottom_nav">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

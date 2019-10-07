@@ -4,15 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.example.projecttimeline.activity.NewProjectActivity;
 import com.example.projecttimeline.adapter.VPAdapter;
 import com.example.projecttimeline.fragment.HomeFragment;
 import com.example.projecttimeline.fragment.NotificationFragment;
 import com.example.projecttimeline.fragment.ReportFragment;
 import com.example.projecttimeline.fragment.UserFragment;
+import com.github.clans.fab.FloatingActionButton;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ReportFragment report;
     NotificationFragment notif;
     UserFragment user;
+    FloatingActionButton fabNewProject, fabListProject, fabNewClient,fabListClient;
 
     MenuItem prevMenuItem;
 
@@ -32,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        VP();
+        Fab();
+
+    }
+
+    private void VP() {
         viewPager = (ViewPager) findViewById(R.id.VPHome);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.btmNavView);
 
@@ -94,6 +105,29 @@ public class MainActivity extends AppCompatActivity {
 
         setupViewPager(viewPager);
     }
+
+    private void Fab() {
+        fabNewProject = (FloatingActionButton) findViewById(R.id.fabNewProject);
+        fabListProject = (FloatingActionButton) findViewById(R.id.fabListProject);
+        fabNewClient = (FloatingActionButton) findViewById(R.id.fabNewClient);
+        fabListClient = (FloatingActionButton) findViewById(R.id.fabListClient);
+
+        fabNewProject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), NewProjectActivity.class);
+                startActivity(intent);
+            }
+        });
+        fabNewClient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), NewProjectActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
     private void setupViewPager(ViewPager viewPager) {
         VPAdapter adapter = new VPAdapter(getSupportFragmentManager());
