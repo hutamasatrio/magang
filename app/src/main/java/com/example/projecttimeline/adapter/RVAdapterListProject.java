@@ -10,39 +10,42 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.model.Notification;
+import com.example.projecttimeline.model.Project;
+import com.example.projecttimeline.model.Report;
 
 import java.util.List;
 
 
-public class RVAdapterNotif extends RecyclerView.Adapter<RVAdapterNotif.MyViewHolder> {
+public class RVAdapterListProject extends RecyclerView.Adapter<RVAdapterListProject.MyViewHolder> {
 
     private Context mContext ;
-    private List<Notification> mData ;
+    private List<Project> mData ;
 
 
-    public RVAdapterNotif(Context mContext, List<Notification> mData) {
+    public RVAdapterListProject(Context mContext, List<Project> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
 
     @Override
-    public RVAdapterNotif.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RVAdapterListProject.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view ;
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.item_notification,parent,false);
-        return new RVAdapterNotif.MyViewHolder(view);
+        view = mInflater.inflate(R.layout.item_list_project,parent,false);
+        return new RVAdapterListProject.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(RVAdapterNotif.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(RVAdapterListProject.MyViewHolder holder, final int position) {
 
 
-        holder.title.setText(mData.get(position).getTitle());
-        holder.subtitle.setText(mData.get(position).getSubTitle());
-        holder.subsubtitle.setText(mData.get(position).getSubSubTitle());
-
+        holder.namaProject.setText(mData.get(position).getNamaProject());
+        holder.divisi.setText(mData.get(position).getDivisiProject());
+        holder.dueDate.setText(mData.get(position).getTanggalMulaiProject());
+        holder.progress.setText(mData.get(position).getProgressProject());
+        holder.namaCLient.setText(mData.get(position).getNamaClient());
+//        holder.progress.setText(mData.get(position).getProgress());
 //        holder.tv_book_title.setText(mData2.get(position).getTitle2());
 //        holder.img_book_thumbnail.setImageResource(mData2.get(position).getThumbnail2());
 //        holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -67,15 +70,17 @@ public class RVAdapterNotif extends RecyclerView.Adapter<RVAdapterNotif.MyViewHo
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView title,subtitle,subsubtitle;
+        TextView namaProject,divisi, dueDate, progress, namaCLient;
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            title = itemView.findViewById(R.id.title);
-            subtitle = itemView.findViewById(R.id.subtitle);
-            subsubtitle = itemView.findViewById(R.id.subsubtitle);
+            namaProject = itemView.findViewById(R.id.tvNamaProject);
+            divisi = itemView.findViewById(R.id.divisiProject);
+            dueDate = itemView.findViewById(R.id.tvDueDateProject);
+            progress = itemView.findViewById(R.id.tvProgressProject);
+            namaCLient = itemView.findViewById(R.id.tvNamaClient);
 
         }
     }

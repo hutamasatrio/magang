@@ -12,9 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.adapter.RVAdapterHome;
 import com.example.projecttimeline.adapter.RVAdapterNotif;
-import com.example.projecttimeline.model.HomeDasboard;
 import com.example.projecttimeline.model.Notification;
 
 import java.util.ArrayList;

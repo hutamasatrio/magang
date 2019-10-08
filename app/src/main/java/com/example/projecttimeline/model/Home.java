@@ -1,7 +1,7 @@
 package com.example.projecttimeline.model;
 
-public class HomeDasboard {
-    public HomeDasboard(String nama, String ci, String co, String jmlProject, String progress, String divisi) {
+public class Home {
+    public Home(String nama, String ci, String co, String jmlProject, String progress, String divisi) {
         Nama = nama;
         Ci = ci;
         Co = co;

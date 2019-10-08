@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.model.HomeDasboard;
+import com.example.projecttimeline.model.Home;
 
 import java.util.List;
 
@@ -18,10 +18,10 @@ import java.util.List;
 public class RVAdapterHome extends RecyclerView.Adapter<RVAdapterHome.MyViewHolder> {
 
     private Context mContext ;
-    private List<HomeDasboard> mData ;
+    private List<Home> mData ;
 
 
-    public RVAdapterHome(Context mContext, List<HomeDasboard> mData) {
+    public RVAdapterHome(Context mContext, List<Home> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }

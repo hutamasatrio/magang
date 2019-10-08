@@ -10,39 +10,43 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.model.Notification;
+import com.example.projecttimeline.model.Client;
+import com.example.projecttimeline.model.Report;
 
 import java.util.List;
 
 
-public class RVAdapterNotif extends RecyclerView.Adapter<RVAdapterNotif.MyViewHolder> {
+public class RVAdapterListClient extends RecyclerView.Adapter<RVAdapterListClient.MyViewHolder> {
 
     private Context mContext ;
-    private List<Notification> mData ;
+    private List<Client> mData ;
 
 
-    public RVAdapterNotif(Context mContext, List<Notification> mData) {
+    public RVAdapterListClient(Context mContext, List<Client> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
 
     @Override
-    public RVAdapterNotif.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RVAdapterListClient.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view ;
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.item_notification,parent,false);
-        return new RVAdapterNotif.MyViewHolder(view);
+        view = mInflater.inflate(R.layout.item_list_client,parent,false);
+        return new RVAdapterListClient.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(RVAdapterNotif.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(RVAdapterListClient.MyViewHolder holder, final int position) {
 
 
-        holder.title.setText(mData.get(position).getTitle());
-        holder.subtitle.setText(mData.get(position).getSubTitle());
-        holder.subsubtitle.setText(mData.get(position).getSubSubTitle());
+        holder.nama.setText(mData.get(position).getNamaClient());
+        holder.email.setText(mData.get(position).getEmailCLient());
+        holder.alamat.setText(mData.get(position).getAlamatClient());
+//        holder.project.setText(mData.get(position).get);
 
+
+//        holder.progress.setText(mData.get(position).getProgress());
 //        holder.tv_book_title.setText(mData2.get(position).getTitle2());
 //        holder.img_book_thumbnail.setImageResource(mData2.get(position).getThumbnail2());
 //        holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -67,15 +71,16 @@ public class RVAdapterNotif extends RecyclerView.Adapter<RVAdapterNotif.MyViewHo
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView title,subtitle,subsubtitle;
+        TextView nama, email, alamat, project;
 
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            title = itemView.findViewById(R.id.title);
-            subtitle = itemView.findViewById(R.id.subtitle);
-            subsubtitle = itemView.findViewById(R.id.subsubtitle);
+            nama = itemView.findViewById(R.id.tvNamaClient);
+            email = itemView.findViewById(R.id.tvEmailClient);
+            alamat = itemView.findViewById(R.id.tvAlamatClient);
+            project = itemView.findViewById(R.id.tvProjectClient);
 
         }
     }

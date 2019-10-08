@@ -10,6 +10,9 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.projecttimeline.activity.ListClientActivity;
+import com.example.projecttimeline.activity.ListProjectActivity;
+import com.example.projecttimeline.activity.NewClientActivity;
 import com.example.projecttimeline.activity.NewProjectActivity;
 import com.example.projecttimeline.adapter.VPAdapter;
 import com.example.projecttimeline.fragment.HomeFragment;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     NotificationFragment notif;
     UserFragment user;
     FloatingActionButton fabNewProject, fabListProject, fabNewClient,fabListClient;
+    Intent intent;
 
     MenuItem prevMenuItem;
 
@@ -115,14 +119,28 @@ public class MainActivity extends AppCompatActivity {
         fabNewProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplication(), NewProjectActivity.class);
+                intent = new Intent(getApplication(), NewProjectActivity.class);
+                startActivity(intent);
+            }
+        });
+        fabListProject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplication(), ListProjectActivity.class);
+                startActivity(intent);
+            }
+        });
+        fabListClient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getApplication(), ListClientActivity.class);
                 startActivity(intent);
             }
         });
         fabNewClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplication(), NewProjectActivity.class);
+                Intent intent = new Intent(getApplication(),NewClientActivity.class);
                 startActivity(intent);
             }
         });

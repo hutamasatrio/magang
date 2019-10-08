@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.projecttimeline.R;
 import com.example.projecttimeline.adapter.RVAdapterHome;
-import com.example.projecttimeline.model.HomeDasboard;
+import com.example.projecttimeline.model.Home;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class HomeFragment extends Fragment {
 
-    List<HomeDasboard> data ;
+    List<Home> data ;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -38,8 +38,8 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         // Inflate the layout for this fragment
         data = new ArrayList<>();
-        data.add(new HomeDasboard("satrio budhi hutama","dasd","wfaw","wfw","fwaf","wfwa"));
-        data.add(new HomeDasboard("hutama satrio budhi","dasd","wfaw","wfw","fwaf","wfwa"));
+        data.add(new Home("satrio budhi hutama","dasd","wfaw","wfw","fwaf","wfwa"));
+        data.add(new Home("hutama satrio budhi","dasd","wfaw","wfw","fwaf","wfwa"));
 
         RecyclerView rvhome = (RecyclerView) view.findViewById(R.id.rvHomeFrag);
         RVAdapterHome mrvadapterhome = new RVAdapterHome(getActivity(), data);
