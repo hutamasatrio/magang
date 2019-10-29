@@ -1,4 +1,4 @@
-package com.example.projecttimeline.activity;
+package com.example.projecttimeline.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,10 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.adapter.RVAdapterHome;
 import com.example.projecttimeline.adapter.RVAdapterListClient;
 import com.example.projecttimeline.model.Client;
-import com.example.projecttimeline.model.Home;
 
 import java.util.ArrayList;
 import java.util.List;

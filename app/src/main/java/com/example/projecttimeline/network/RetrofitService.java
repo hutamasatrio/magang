@@ -1,20 +1,24 @@
 package com.example.projecttimeline.network;
 
+import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class Retrofit {
+public class RetrofitService {
+    private Retrofit retrofit = null;
 
 
-    private static retrofit2.Retrofit retrofit;
-    private static final String BASE_URL = "http://localhost/magang/timeline2/api/";
+    public Api getAPI() {
+        String BASE_URL = "http://127.0.0.1/magang/timeline2/api/";
 
-    public static retrofit2.Retrofit getRetrofitInstance() {
         if (retrofit == null) {
-            retrofit = new retrofit2.Retrofit.Builder()
+            retrofit = new Retrofit
+                    .Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit;
+
+        return retrofit.create(Api.class);
     }
+
 }

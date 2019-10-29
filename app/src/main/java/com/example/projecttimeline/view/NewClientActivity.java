@@ -1,4 +1,4 @@
-package com.example.projecttimeline.activity;
+package com.example.projecttimeline.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

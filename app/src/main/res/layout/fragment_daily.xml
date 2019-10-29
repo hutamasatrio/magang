@@ -3,12 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.DailyFragment">
+    tools:context=".view.DailyFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="250dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="#ffe95451"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+            app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/TVtask"
+            android:layout_width="wrap_content"
+            android:text="Task"
+            android:layout_marginStart="20dp"
+            android:textSize="10pt"
+            android:layout_below="@id/compactcalendar_view"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/TVtask"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
 </FrameLayout>

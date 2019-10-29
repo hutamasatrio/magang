@@ -2,14 +2,17 @@ package com.example.projecttimeline.adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecttimeline.R;
+import com.example.projecttimeline.view.TimeLineActivity;
 import com.example.projecttimeline.model.Home;
 
 import java.util.List;
@@ -45,6 +48,13 @@ public class RVAdapterHome extends RecyclerView.Adapter<RVAdapterHome.MyViewHold
         holder.co.setText(mData.get(position).getCo());
         holder.jmlProjek.setText(mData.get(position).getJmlProject());
         holder.progress.setText(mData.get(position).getProgress());
+        holder.cardviewHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (mContext, TimeLineActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
 //        holder.tv_book_title.setText(mData2.get(position).getTitle2());
 //        holder.img_book_thumbnail.setImageResource(mData2.get(position).getThumbnail2());
 //        holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -70,11 +80,12 @@ public class RVAdapterHome extends RecyclerView.Adapter<RVAdapterHome.MyViewHold
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView nama,divisi,ci,co, jmlProjek,progress;
-
+        CardView cardviewHome;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
+            cardviewHome = itemView.findViewById(R.id.cardviewhome);
             nama = itemView.findViewById(R.id.tvNamaHome);
             divisi = itemView.findViewById(R.id.divisiHome);
             ci = itemView.findViewById(R.id.tvCI);

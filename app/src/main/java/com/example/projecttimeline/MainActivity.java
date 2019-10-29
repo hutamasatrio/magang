@@ -10,15 +10,15 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.projecttimeline.activity.ListClientActivity;
-import com.example.projecttimeline.activity.ListProjectActivity;
-import com.example.projecttimeline.activity.NewClientActivity;
-import com.example.projecttimeline.activity.NewProjectActivity;
+import com.example.projecttimeline.view.ListClientActivity;
+import com.example.projecttimeline.view.ListProjectActivity;
+import com.example.projecttimeline.view.NewClientActivity;
+import com.example.projecttimeline.view.NewProjectActivity;
 import com.example.projecttimeline.adapter.VPAdapter;
-import com.example.projecttimeline.fragment.HomeFragment;
-import com.example.projecttimeline.fragment.NotificationFragment;
-import com.example.projecttimeline.fragment.ReportFragment;
-import com.example.projecttimeline.fragment.UserFragment;
+import com.example.projecttimeline.view.HomeFragment;
+import com.example.projecttimeline.view.NotificationFragment;
+import com.example.projecttimeline.view.ReportFragment;
+import com.example.projecttimeline.view.UserFragment;
 import com.github.clans.fab.FloatingActionButton;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private BottomNavigationView bottomNavigationView;
+
+
 
     HomeFragment home;
     ReportFragment report;

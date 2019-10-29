@@ -1,4 +1,4 @@
-package com.example.projecttimeline.activity;
+package com.example.projecttimeline.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -6,17 +6,23 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.example.projecttimeline.R;
-import com.example.projecttimeline.fragment.DailyFragment;
-import com.example.projecttimeline.fragment.WeeklyFragment;
+import com.google.android.material.tabs.TabLayout;
 
 public class TimeLineActivity extends AppCompatActivity {
 
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_line);
 
+
+        this.tabLayout = findViewById(R.id.tabLayout);
+
+        tabLayout.addTab(tabLayout.newTab().setText("First"));
+        tabLayout.addTab(tabLayout.newTab().setText("Second"));
+        tabLayout.addTab(tabLayout.newTab().setText("Third"));
        Fragment();
     }
 

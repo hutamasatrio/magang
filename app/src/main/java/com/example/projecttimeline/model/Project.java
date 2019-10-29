@@ -39,24 +39,10 @@ public class Project {
         NamaClient = namaClient;
     }
 
-    public String getDivisiProject() {
-        return DivisiProject;
-    }
-
-    public void setDivisiProject(String divisiProject) {
-        DivisiProject = divisiProject;
-    }
-
-    public Project(String namaProject, String tanggalMulaiProject, String progressProject, String namaClient, String divisiProject) {
+    public Project(String namaProject, String tanggalMulaiProject, String progressProject, String namaClient) {
         NamaProject = namaProject;
         TanggalMulaiProject = tanggalMulaiProject;
         ProgressProject = progressProject;
         NamaClient = namaClient;
-        DivisiProject = divisiProject;
     }
-
-    private String DivisiProject;
-
-
-
 }

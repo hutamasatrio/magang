@@ -1,4 +1,4 @@
-package com.example.projecttimeline.fragment;
+package com.example.projecttimeline.view;
 
 
 import android.os.Bundle;

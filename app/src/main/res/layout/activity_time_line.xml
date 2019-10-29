@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.TimeLineActivity">
+    android:orientation="vertical"
+    tools:context=".view.TimeLineActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/tab_layout_background"
+        app:tabMode="scrollable"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:tabBackground="@drawable/tab_layout_selector"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabPaddingStart="16dp"
+        app:tabPaddingEnd="16dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@style/TabTextAppearance"/>
+
+
+    <FrameLayout
+        android:id="@+id/frameTimeLine"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="300dp"/>
+
+
+
+
+
+
+</LinearLayout>

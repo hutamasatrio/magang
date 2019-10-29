@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.InputDataActivity">
+    tools:context=".view.InputDataActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -19,9 +19,9 @@
 
         <EditText
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:padding="2dp"
-            android:layout_height="wrap_content" />
+            android:padding="2dp" />
 
     </androidx.cardview.widget.CardView>
 
