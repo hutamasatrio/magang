@@ -1,4 +1,4 @@
-package com.example.projecttimeline.view;
+package com.example.projecttimeline.view.timeline;
 
 
 import android.content.Context;
@@ -70,7 +70,7 @@ public class DailyFragment extends Fragment {
                 Context context = getActivity().getApplicationContext();
 
                 if (dateClicked.toString().compareTo("Fri Oct 25 00:00:00 GMT+07:00 2019") == 0) {
-                    Toast.makeText(context, "Beginning of Term for Students", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, dateClicked.toString(), Toast.LENGTH_SHORT).show();
 
                 }else {
 

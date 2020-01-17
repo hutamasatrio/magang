@@ -14,7 +14,7 @@ import com.example.projecttimeline.view.ListClientActivity;
 import com.example.projecttimeline.view.ListProjectActivity;
 import com.example.projecttimeline.view.NewClientActivity;
 import com.example.projecttimeline.view.NewProjectActivity;
-import com.example.projecttimeline.adapter.VPAdapter;
+import com.example.projecttimeline.adapter.TLAdapterHome;
 import com.example.projecttimeline.view.HomeFragment;
 import com.example.projecttimeline.view.NotificationFragment;
 import com.example.projecttimeline.view.ReportFragment;
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setupViewPager(ViewPager viewPager) {
-        VPAdapter adapter = new VPAdapter(getSupportFragmentManager());
+        TLAdapterHome adapter = new TLAdapterHome(getSupportFragmentManager());
         home = new HomeFragment();
         report = new ReportFragment();
         notif = new NotificationFragment();

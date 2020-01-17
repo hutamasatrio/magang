@@ -8,8 +8,12 @@
     <color name="sacoret2">#D31B31</color>
     <color name="white_color">#ffff</color>
 
+    <color name="colorPressed">#AD0045</color>
 
     <color name="black">#000</color>
     <color name="dark_red">#B71C1C</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="colorFocused">#C50150</color>
 
 </resources>

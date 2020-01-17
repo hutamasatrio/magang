@@ -2,18 +2,19 @@ package com.example.projecttimeline.adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projecttimeline.R;
 import com.example.projecttimeline.model.DataProject;
-import com.example.projecttimeline.model.Project;
-import com.example.projecttimeline.model.Report;
+import com.example.projecttimeline.view.timeline.OnlyTimelineActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +51,14 @@ public class RVAdapterListProject extends RecyclerView.Adapter<RVAdapterListProj
         holder.dueDate.setText(mdata.getStartDate());
         holder.progress.setText(mdata.getKeterangan());
         holder.namaCLient.setText(mdata.getClient());
+        holder.cardListProject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, OnlyTimelineActivity.class);
+                intent.putExtra("id",projects.get(position).getIdProject());
+                mContext.startActivity(intent);
+            }
+        });
 
     }
 
@@ -60,12 +69,13 @@ public class RVAdapterListProject extends RecyclerView.Adapter<RVAdapterListProj
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView namaProject,divisi, dueDate, progress, namaCLient;
+        CardView cardListProject;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-
+            cardListProject = itemView.findViewById(R.id.cardListProject);
             namaProject = itemView.findViewById(R.id.tvNamaProject);
             divisi = itemView.findViewById(R.id.divisiProject);
             dueDate = itemView.findViewById(R.id.tvDueDateProject);

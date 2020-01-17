@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.projecttimeline">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,8 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".view.TimeLineActivity"></activity>
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.timeline.OnlyTimelineActivity"></activity>
+        <activity android:name=".view.TimeLineActivity" />
         <activity android:name=".view.ListProjectActivity" />
         <activity android:name=".view.ListClientActivity" />
         <activity android:name=".view.NewClientActivity" />

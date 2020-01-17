@@ -1,14 +1,11 @@
-package com.example.projecttimeline.view;
+package com.example.projecttimeline.view.timeline;
 
 import com.example.projecttimeline.model.DataProject;
-import com.example.projecttimeline.model.DataTimeline;
 import com.example.projecttimeline.model.DataTimelineAll;
 
 import java.util.List;
 
-public interface DataView {
-
-    public void projectView(List<DataProject> project);
+public interface DataViewTimeline {
 
     void timelineView(List<DataTimelineAll> timeline);
 }

@@ -7,10 +7,10 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VPAdapter extends FragmentPagerAdapter {
+public class TLAdapterHome extends FragmentPagerAdapter {
     private final List<Fragment> mFragmentList = new ArrayList<>();
 
-    public VPAdapter(FragmentManager manager) {
+    public TLAdapterHome(FragmentManager manager) {
         super(manager);
     }
     @Override

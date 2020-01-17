@@ -8,7 +8,7 @@ public class RetrofitService {
 
 
     public Api getAPI() {
-        String BASE_URL = "http://127.0.0.1/magang/timeline2/api/";
+        String BASE_URL = "http://apitimeline.000webhostapp.com/api/";
 
         if (retrofit == null) {
             retrofit = new Retrofit

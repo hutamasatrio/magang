@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_Title"
+            android:layout_marginStart="@dimen/spacing_xtra"
+            android:layout_marginTop="@dimen/spacing_xtra"
+            android:text="Masukan Perubuhan"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:layout_below="@+id/tv_Title"
+            android:id="@+id/et_Input_Data"
+            android:layout_margin="@dimen/spacing_xtra"
+            android:hint="input data"
+            android:singleLine="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:layout_below="@+id/et_Input_Data"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_xtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btn_Input_Cancle"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextWhite"
+                android:background="@drawable/button_background"
+                android:layout_margin="@dimen/spacing_smaller"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+        <Button
+                android:id="@+id/btn_Input_Ok"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextWhite"
+                android:background="@drawable/button_background"
+                android:layout_margin="@dimen/spacing_smaller"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

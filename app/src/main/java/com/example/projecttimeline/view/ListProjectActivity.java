@@ -4,25 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.projecttimeline.R;
 import com.example.projecttimeline.adapter.RVAdapterListProject;
 import com.example.projecttimeline.model.DataProject;
-import com.example.projecttimeline.model.Project;
-import com.example.projecttimeline.network.Api;
-import com.example.projecttimeline.network.RetrofitService;
+import com.example.projecttimeline.model.DataTimeline;
+import com.example.projecttimeline.model.DataTimelineAll;
 import com.example.projecttimeline.presenter.ListProjectPresenter;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class ListProjectActivity extends AppCompatActivity implements DataView {
 
@@ -51,7 +44,6 @@ public class ListProjectActivity extends AppCompatActivity implements DataView {
         adapter = new RVAdapterListProject(this);
         recyclerView.setAdapter(adapter);
 
-
     }
 
 
@@ -65,6 +57,11 @@ public class ListProjectActivity extends AppCompatActivity implements DataView {
                     + " - Alpha4:  " + cobaproject.getNamaProject() + " \n"
                     + " - Alpha5: " + cobaproject.getTypeProject());
         }
+    }
+
+    @Override
+    public void timelineView(List<DataTimelineAll> timeline) {
+
     }
 
 
